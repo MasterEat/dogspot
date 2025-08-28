@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('header nav');
-  if (menuToggle && nav) {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (menuToggle && mobileMenu) {
     menuToggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
+      const open = mobileMenu.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', open);
+      mobileMenu.setAttribute('aria-hidden', !open);
     });
   }
 });
