@@ -88,12 +88,26 @@ nav a {
 
 .slides {
   display: flex;
-  transition: transform 1s ease;
+  animation: scroll 60s linear infinite;
 }
 
-.slides img {
-  width: 100%;
-  flex-shrink: 0;
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: 25%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .faq-item {
@@ -129,9 +143,7 @@ footer {
   padding: 20px;
 }
 
-.footer-content {
-  position: relative;
-  text-align: center;
+
 }
 
 footer .contact {
@@ -149,4 +161,14 @@ footer .contact {
 footer p {
   margin: 5px 0;
   text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
 }
