@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Follow Rocky and Ruby's adventures, tips, and stories for dog lovers." />
+  <meta property="og:title" content="Rocky & Ruby Dog Spot" />
+  <meta property="og:description" content="Follow Rocky and Ruby's adventures, tips, and stories for dog lovers." />
+  <meta property="og:image" content="https://mastereat.github.io/dogspot/images/hero.png" />
+  <meta property="og:url" content="https://mastereat.github.io/dogspot/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rocky & Ruby Dog Spot" />
+  <meta name="twitter:description" content="Follow Rocky and Ruby's adventures, tips, and stories for dog lovers." />
+  <meta name="twitter:image" content="https://mastereat.github.io/dogspot/images/hero.png" />
+  <meta name="twitter:url" content="https://mastereat.github.io/dogspot/" />
   <title>Rocky & Ruby Dog Spot</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#hero" class="skip-link">Skip to content</a>
   <header>
     <div class="container">
       <button id="menu-button" class="menu-button" aria-label="Menu" aria-expanded="false">
-        <img src="images/bone.svg" alt="menu" />
+        <img src="images/hamburger.svg" alt="menu" />
       </button>
       <a href="https://mastereat.github.io/dogspot/">
         <img src="images/logo.png" alt="Rocky & Ruby Dog Spot logo" class="logo" />
@@ -38,14 +49,16 @@
   </header>
 
   <div class="mobile-menu" aria-hidden="true">
-    <img src="images/logo.png" alt="Rocky & Ruby Dog Spot logo" class="menu-logo" />
-    <nav class="mobile-nav">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-      </ul>
-    </nav>
+    <div class="menu-center">
+      <img src="images/logo.png" alt="Rocky & Ruby Dog Spot logo" class="menu-logo" />
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="mobile-social">
       <a href="https://facebook.com" target="_blank" rel="noopener">
         <img src="images/facebook.svg" alt="Facebook" />
@@ -60,6 +73,7 @@
     <p class="menu-email">info@rockyrubyspot.com</p>
   </div>
 
+  <main>
   <section id="hero">
     <div class="hero-content">
       <h1>Welcome to <span>Rocky & Ruby Dog Spot</span></h1>
@@ -117,6 +131,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer>
     <div class="footer-content">
