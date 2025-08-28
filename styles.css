@@ -183,3 +183,21 @@ footer .footer-social img {
 footer p {
   margin: 5px 0;
 }
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer .contact {
+    margin: 10px 0;
+  }
+
+  footer .footer-social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
