@@ -88,12 +88,26 @@ nav a {
 
 .slides {
   display: flex;
-  transition: transform 1s ease;
+  animation: scroll 60s linear infinite;
 }
 
-.slides img {
-  width: 100%;
-  flex-shrink: 0;
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: 25%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .faq-item {
