@@ -143,16 +143,19 @@ footer {
   padding: 20px;
 }
 
-footer .footer-content {
-  max-width: 1000px;
-  margin: 0 auto 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 
 footer .contact {
   text-align: left;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-logo {
+  height: 50px;
 }
 
 footer p {
