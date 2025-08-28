@@ -98,6 +98,7 @@ nav a {
 .slides {
   display: flex;
   animation: scroll 60s linear infinite;
+  gap: 5mm;
 }
 
 .slide {
