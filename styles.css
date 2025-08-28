@@ -20,7 +20,7 @@ header .container {
 }
 
 .logo {
-  height: 50px;
+  height: 100px;
 }
 
 .menu-toggle {
@@ -164,7 +164,7 @@ footer .contact {
 }
 
 .footer-logo {
-  height: 50px;
+  height: 100px;
 }
 
 footer p {
