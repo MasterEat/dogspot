@@ -63,6 +63,16 @@ nav a:hover {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
+header .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+header .social-icons img {
+  width: 32px;
+  height: 32px;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
