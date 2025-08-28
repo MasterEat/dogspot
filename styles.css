@@ -97,12 +97,26 @@ nav a {
 
 .slides {
   display: flex;
-  transition: transform 1s ease;
+  animation: scroll 60s linear infinite;
 }
 
-.slides img {
-  width: 100%;
-  flex-shrink: 0;
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: 25%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .faq-item {
@@ -138,8 +152,19 @@ footer {
   padding: 20px;
 }
 
+
+}
+
 footer .contact {
-  text-align: center;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-logo {
+  height: 50px;
 }
 
 footer p {
@@ -147,41 +172,5 @@ footer p {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  header .container {
-    flex-wrap: wrap;
-  }
 
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    display: none;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  nav.open ul {
-    display: flex;
-  }
-
-  nav ul li {
-    text-align: center;
-  }
-
-  #hero {
-    flex-direction: column;
-  }
-
-  .hero-image {
-    margin-top: 20px;
-    max-width: 100%;
-  }
 }
