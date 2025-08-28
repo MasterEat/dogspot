@@ -5,7 +5,19 @@ body {
   color: #333;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #27D6F5;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+}
 
+.skip-link:focus {
+  top: 10px;
+}
 
 header {
   background: #27D6F5;
