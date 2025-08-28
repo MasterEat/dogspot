@@ -25,11 +25,42 @@ header .container {
 
 .menu-toggle {
   display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 24px;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.menu-toggle::before,
+.menu-toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 50%;
+}
+
+.menu-toggle::before {
+  left: -12px;
+}
+
+.menu-toggle::after {
+  right: -12px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #333;
+  margin: 3px auto;
 }
 
 nav ul {
@@ -44,6 +75,50 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #27D6F5;
+  color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu nav ul {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu nav a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.mobile-menu .mobile-social {
+  display: flex;
+  gap: 15px;
+}
+
+.mobile-menu .menu-logo {
+  width: 120px;
+}
+
+.mobile-menu .menu-email {
+  margin-top: 10px;
 }
 
 #hero {
@@ -181,6 +256,17 @@ footer .footer-social img {
 
 footer p {
   margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  header nav,
+  header .social-icons {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 @media (max-width: 600px) {
